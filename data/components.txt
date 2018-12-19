@@ -1,9 +1,0 @@
-memory.json
-cpu.json
-display.json
-multimedia.json
-usb.json
-storage.json
-network.json
-network.json
-multimedia.json

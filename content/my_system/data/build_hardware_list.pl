@@ -71,16 +71,12 @@ for my $section (@sections) {
                 }
             }
 
-            #write out to the file using $token in JSON format
-            #check for existing file in duplicate cases
-            my $json_data = JSON->new->pretty->encode(\%tuples);
-            #my $json_data = encode_json \%tuples;
-
-            my $file_name = "$token.toml";
-            push (@components, $file_name);
+            if(!grep { $_ eq $token } @components) {
+                push (@components, $token);
+            }
 
             #print %tuples;
-            open my $fh, ">", "$token.toml";
+            open my $fh, ">", "$token.csv";
             
             foreach my $item (keys %tuples) {
 
@@ -94,8 +90,8 @@ for my $section (@sections) {
     }
 }
 
-open my $fh, ">", "components.json";
+open my $fh, ">", "components.csv";
 foreach my $component (@components) {
-    print $fh "$component\n";
+    print $fh "$component,$component.csv\n";
 }
 close $fh;

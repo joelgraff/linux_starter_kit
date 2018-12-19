@@ -8,12 +8,6 @@ pre = "<b>2. </b>"
 
 # My System
 
-Details specific to your system, including current hardware and upgrade options.
+Details specific to your system.
 
-{{<table "cpu">}}
-
-{{% notice note %}}
-This page is a shameful copy of the great [Grav original page](http://learn.getgrav.org/content/markdown).
-Only difference is information about image customization ([resizing]({{< relref "#resizing-image" >}}), [add CSS classes]({{< relref "#add-css-classes" >}})...)
-{{% /notice%}}
-
+{{<table>}}

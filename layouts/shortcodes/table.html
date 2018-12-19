@@ -1,12 +1,23 @@
-{{ $arg := .Get 0 }}
-{{ $dataFile := index .Site.Data $arg }}
 {{ $sep := "," }}
-{{ $.Scratch.Set "count" 0 }}
-
+{{ $dataPath := "/content/my_system/data/" }}
+{{ $compFile := getCSV $sep $dataPath "components.csv" }}
+{{ range $i, $r := $compFile }}
+{{ $dataFile := index $r 1 }}
+{{ $data := getCSV $sep $dataPath $dataFile }}
 <table>
+    <col width="150">
     <thead>
         <tr>
-            <th colspan='2'> {{ $sep }} {{ $dataFile }}</th>
+            <th colspan='2'> {{ index $r 0 }}</th>
         </tr>
     </thead>
+    <tbody>
+        {{ range $j, $s := $data }}
+        <tr>
+            <td>{{ index $s 0 }}</td>
+            <td>{{ index $s 1 }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
 </table>
+{{ end }}
