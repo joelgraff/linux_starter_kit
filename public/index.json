@@ -1,0 +1,43 @@
+[
+{
+	"uri": "http://example.org/quick_start/",
+	"title": "Quick Start",
+	"tags": [],
+	"description": "",
+	"content": " Quick Start A quick introduction to getting up and running with your Linux system.\n"
+},
+{
+	"uri": "http://example.org/my_system/",
+	"title": "My System",
+	"tags": [],
+	"description": "",
+	"content": " My System Details specific to your system, including current hardware and upgrade options.\n      This page is a shameful copy of the great Grav original page. Only difference is information about image customization (resizing, add CSS classes\u0026hellip;)\n "
+},
+{
+	"uri": "http://example.org/faq/",
+	"title": "FAQ",
+	"tags": [],
+	"description": "",
+	"content": " FAQ Some answers to common questions new users have about Linux\n"
+},
+{
+	"uri": "http://example.org/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/",
+	"title": "My New Hugo Site",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

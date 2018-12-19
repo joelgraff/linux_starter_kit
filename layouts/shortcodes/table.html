@@ -1,0 +1,12 @@
+{{ $arg := .Get 0 }}
+{{ $dataFile := index .Site.Data $arg }}
+{{ $sep := "," }}
+{{ $.Scratch.Set "count" 0 }}
+
+<table>
+    <thead>
+        <tr>
+            <th colspan='2'> {{ $sep }} {{ $dataFile }}</th>
+        </tr>
+    </thead>
+</table>
